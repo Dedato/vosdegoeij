@@ -1,0 +1,11 @@
+{% extends "base.twig" %}
+
+{% block main %}
+  {% if images %}
+    <div class="owl-carousel">
+      {% for image in images %}
+        {% include 'loop-image.twig' %}     
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endblock %}

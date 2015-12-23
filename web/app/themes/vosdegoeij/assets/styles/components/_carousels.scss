@@ -1,0 +1,86 @@
+// Owl Specific
+.owl-carousel {
+  .item {
+    position: relative;
+    margin-bottom: $grid-gutter-width;
+    @include intrinsic-pad-ratio(4, 3, '.stretch', 768, 4, 3, $body-bg, $brand-primary, 2em, 1em);
+    .caption {
+      position: absolute;
+      bottom: -$grid-gutter-width;
+      left: 0;
+    }
+  }
+  // Navigation
+  .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    [class*='owl-'] {
+      display: inline-block;
+      margin: 0 1em;
+      font-size: 1.5em;
+      color: $brand-primary;
+      opacity: 0.9;
+      cursor: pointer;
+      transition: opacity .25s ease;
+      .fa {vertical-align: top; }
+      &:hover {
+        opacity: 1;
+        text-decoration: none;
+      }
+    }
+    &.disabled {
+      opacity: 0.5;
+      cursor: default; 
+    }
+    &.disabled + .owl-dots {
+      margin-top: 10px;
+    }
+    @media (min-width: $screen-sm-min) {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      [class*='owl-'] {
+        height: 1em;
+        line-height: 1;
+        margin-top: -0.75em;
+        font-size: 2.5em;
+        &.owl-prev {
+          float: left;
+          margin-left: -$grid-gutter-width;
+        }
+        &.owl-next {
+          float: right;
+          margin-right: -$grid-gutter-width;
+        }
+      }
+    }
+  }
+  // Dots
+  .owl-dots {
+    padding: ($grid-gutter-width / 2) 0;
+    .owl-dot {
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      span {
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+        margin: 0 12px 0 0;
+        background: $brand-primary;
+        opacity: 0.25;
+        display: block;
+        -webkit-backface-visibility: visible;
+        transition: opacity 0.2s ease;
+        border-radius: 100%;
+      }  
+      &.active,
+      &:hover {
+        span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// Wrapper and base class
+.navbar {
+  border: none;
+}
+
+// Navbar collapse (body)
+.navbar-collapse {
+  padding-right: $navbar-padding-horizontal;
+  padding-left:  $navbar-padding-horizontal;
+  border-top: none;
+  box-shadow: none;
+}
+
+.navbar-default {
+  // Navbar toggle
+  .navbar-toggle {
+    border: none;
+    &:hover,
+    &:focus {
+      background: none;
+      .icon-bar {
+        background: $gray-base;
+      }
+    }
+  }
+}

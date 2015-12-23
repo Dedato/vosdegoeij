@@ -1,0 +1,51 @@
+{
+  "name": "sage",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    "Ben Word <ben@benword.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "3.3.6",
+    "respimage": "~1.4.2",
+    "lazysizes": "~1.3.2",
+    "owl.carousel": "~2.0.0-beta.3",
+    "font-awesome": "fontawesome#~4.5.0"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "./assets/stylesheets/bootstrap/_variables.scss",
+        "./assets/stylesheets/bootstrap/_mixins.scss",
+        "./assets/stylesheets/bootstrap/_normalize.scss",
+        "./assets/stylesheets/bootstrap/_scaffolding.scss",
+        "./assets/stylesheets/bootstrap/_type.scss",
+        "./assets/stylesheets/bootstrap/_grid.scss",
+        "./assets/stylesheets/bootstrap/_forms.scss",
+        "./assets/stylesheets/bootstrap/_buttons.scss",
+        "./assets/stylesheets/bootstrap/_component-animations.scss",
+        "./assets/stylesheets/bootstrap/_navs.scss",
+        "./assets/stylesheets/bootstrap/_navbar.scss",
+        "./assets/stylesheets/bootstrap/_pager.scss",
+        "./assets/stylesheets/bootstrap/_labels.scss",
+        "./assets/stylesheets/bootstrap/_utilities.scss",
+        "./assets/stylesheets/bootstrap/_responsive-utilities.scss",
+        "./assets/javascripts/bootstrap/transition.js",
+        "./assets/javascripts/bootstrap/button.js",
+        "./assets/javascripts/bootstrap/collapse.js"
+      ]
+    },
+    "respimage": {
+      "main": [
+        "./respimage.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "./scss/font-awesome.scss",
+        "./fonts/*"
+      ]
+    }
+  }
+}

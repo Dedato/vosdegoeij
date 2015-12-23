@@ -1,0 +1,40 @@
+  {% block head %}
+    {% include 'head.twig' %}
+    {{ function('wp_head') }}
+  {% endblock %}
+  </head>
+
+	<body class="{{body_class}}">
+	  <!--[if IE 8]>
+      <div class="alert alert-warning">
+        {{ __('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage') }}
+      </div>
+    <![endif]-->
+		{% block header %}
+		  {% include 'header.twig' %}
+    {% endblock %}
+    <div class="wrap" role="document">     
+      <div class="container">
+        <div class="content row">
+          <main class="main">
+            {% block main %}
+              Sorry, no content
+            {% endblock %}
+          </main>
+          {% if display_sidebar %}
+            <aside class="sidebar">
+              {% block sidebar %}
+                {% include 'sidebar.twig' %}
+              {% endblock %}
+            </aside>
+          {% endif %}
+        </div>
+      </div>
+      <div class="push"></div>
+    </div>
+		{% block footer %}
+		  {% include 'footer.twig' %}
+			{{ function('wp_footer') }}
+		{% endblock %}
+	</body>
+</html>

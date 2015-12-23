@@ -1,0 +1,17 @@
+{% set img = TimberImage(image.id) %}
+{% if img %}
+  {% set ratio = img.sizes.medium.height / img.sizes.medium.width %}
+  <div class="item">
+    <div class="stretch loading">
+      <i class="fa fa-circle-o-notch fa-spin"></i>
+    </div>
+    {{ function('create_resp_picture', loop.index0, ['stretch'], true, [ 
+        [img.src|letterbox(1140, 855, '#E5E6E5'), img.src|letterbox(2280, 1710, '#E5E6E5'), 1024],
+        [img.src|letterbox(1024, 768, '#E5E6E5'), img.src|letterbox(2048, 1536, '#E5E6E5'), 992], 
+        [img.src|letterbox(962, 722, '#E5E6E5'), img.src|letterbox(1924, 1444, '#E5E6E5'), 768], 
+        [img.src|letterbox(738, 554, '#E5E6E5'), img.src|letterbox(1476, 1108, '#E5E6E5')] ], img.src|letterbox(1140, 855, '#E5E6E5'), img.alt) }}
+    {% if img.caption %}  
+      <p class="caption">{{img.caption}}</p>
+    {% endif %}
+  </div>
+{% endif %}
