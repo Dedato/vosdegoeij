@@ -11,10 +11,42 @@
   box-shadow: none;
 }
 
+.nav {
+  font-size: $font-size-small;
+}
+
+.navbar-nav {
+  > li > a {
+    padding-top:    $navbar-padding-vertical;
+    padding-bottom: $navbar-padding-vertical;
+  }
+  // Uncollapse the nav
+  @media (min-width: $grid-float-breakpoint) {
+    > li {
+      > a {
+        padding-top:    $navbar-padding-vertical;
+        padding-bottom: $navbar-padding-vertical;
+      }
+    }
+  }
+}
+
+
 .navbar-default {
+  .navbar-brand {
+    font-size: $font-size-small;
+  }
   // Navbar toggle
   .navbar-toggle {
     border: none;
+    .select,
+    .icon-bars {
+      font-size: $font-size-small;
+      float: left;
+    }
+    .icon-bars {
+      margin: 3px 0 0 10px; 
+    }
     &:hover,
     &:focus {
       background: none;

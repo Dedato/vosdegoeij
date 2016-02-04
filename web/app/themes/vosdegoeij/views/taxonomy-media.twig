@@ -1,6 +1,7 @@
 {% extends "base.twig" %}
 
 {% block main %}
+  <h3>{{ term.name }}</h3>
   {% if images %}
     <div class="owl-carousel">
       {% for image in images %}

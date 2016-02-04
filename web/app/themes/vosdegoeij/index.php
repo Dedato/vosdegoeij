@@ -9,4 +9,4 @@ $data['images'] = Timber::get_posts(array(
   'posts_per_page'  => -1
 ));
 
-Timber::render('index.twig', $data);
+Timber::render('index.twig', $data, [600, 0]);

@@ -31,7 +31,7 @@
           navText:            ['<i class="fa fa-lg fa-caret-left"></i>', '<i class="fa fa-lg fa-caret-right"></i>'],
           dots:               false,
           autoplay:           true,
-          autoplayTimeout:    5000,
+          autoplayTimeout:    4000,
           autoplayHoverPause: true,
           autoHeight:         true
         });

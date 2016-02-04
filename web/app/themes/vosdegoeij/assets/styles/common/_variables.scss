@@ -1,24 +1,62 @@
 // Glyphicons font path
-$icon-font-path:                  "../fonts/";
+$icon-font-path:                          "../fonts/";
 
 //== Grid settings
-$main-sm-columns:                 12;
-$sidebar-sm-columns:              4;
-$grid-float-breakpoint:           9999px;
+$main-sm-columns:                         12;
+$sidebar-sm-columns:                      4;
+$grid-float-breakpoint:                   9999px;
+$grid-gutter-width:                       30px;
 
 //== Colors
-$gray-base:                       #000;
-$brand-primary:                   #706F6F;
-$white:                           #FFF;
+$gray-base:                               #000;
+$brand-primary:                           #706F6F;
+$white:                                   #FFF;
 
 //== Scaffolding
-$body-bg:                         #E5E6E5;
-$text-color:                      $brand-primary;
-$link-color:                      $gray-base;
-$link-hover-color:                darken($link-color, 15%);
-$link-hover-decoration:           none;
+$body-bg:                                 #E5E6E5;
+$text-color:                              $brand-primary;
+$link-color:                              $gray-base;
+$link-hover-color:                        darken($link-color, 15%);
+$link-hover-decoration:                   none;
+
+//== Typography
+$font-family-sans-serif:                  "Work Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base:                        $font-family-sans-serif;
+
+$font-size-base:                          18px;
+$font-size-large:                         ceil($font-size-base * 1.33); // ~24px
+$font-size-small:                         ceil($font-size-base * 0.78); // ~14px
+
+$headings-font-weight:                    300;
 
 //== Components
-$border-radius-base:              0;
-$border-radius-large:             0;
-$border-radius-small:             0;
+$border-radius-base:                      0;
+$border-radius-large:                     0;
+$border-radius-small:                     0;
+
+
+//== Container sizes
+$container-tablet:                        100%;
+$container-sm:                            $container-tablet;
+$container-desktop:                       100%;
+$container-md:                            $container-desktop;
+$container-large-desktop:                 (1000px + $grid-gutter-width);
+$container-lg:                            $container-large-desktop;
+
+
+//== Navbar
+$navbar-height:                           $grid-gutter-width;
+$navbar-padding-horizontal:               floor(($grid-gutter-width / 2));
+$navbar-padding-vertical:                 floor(($grid-gutter-width / 6));
+$navbar-collapse-max-height:              340px;
+
+$navbar-default-color:                    $brand-primary;
+$navbar-default-bg:                       $body-bg;
+$navbar-default-border:                   transparent;
+
+// Navbar links
+$navbar-default-link-color:               $brand-primary;
+$navbar-default-link-hover-color:         $gray-base;
+$navbar-default-link-hover-bg:            transparent;
+$navbar-default-link-active-color:        $gray-base;
+$navbar-default-link-active-bg:           transparent;

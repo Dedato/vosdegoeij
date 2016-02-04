@@ -39,7 +39,7 @@
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.3.2.2",
+        "version": "5.3.3.2",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -52,11 +52,11 @@
     "php": ">=5.5",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.4",
-    "koodimonni-language/core-nl_NL": "4.4",
+    "johnpbloch/wordpress": "4.4.*",
+    "koodimonni-language/core-nl_NL": "4.4.*",
     "roots/soil": "^3.6",
     "jarednova/timber": "^0.22.0",
-    "advanced-custom-fields/advanced-custom-fields-pro": "5.3.2.2",
+    "advanced-custom-fields/advanced-custom-fields-pro": "5.3.*",
     "wpackagist-plugin/restricted-site-access": "5.*",
     "wpackagist-plugin/better-wp-security": "^5.1",
     "wpackagist-plugin/enhanced-media-library": "^2.1"

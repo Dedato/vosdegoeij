@@ -15,4 +15,5 @@ $data['images'] = Timber::get_posts(array(
   'orderby'         => 'rand',
   'posts_per_page'  => -1
 ));
-Timber::render('index.twig', $data);
+$data['term']    = $term;
+Timber::render('taxonomy-media.twig', $data, [600, 0]);

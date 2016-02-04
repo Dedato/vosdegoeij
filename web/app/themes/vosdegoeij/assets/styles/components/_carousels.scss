@@ -2,12 +2,17 @@
 .owl-carousel {
   .item {
     position: relative;
-    margin-bottom: $grid-gutter-width;
-    @include intrinsic-pad-ratio(4, 3, '.stretch', 768, 4, 3, $body-bg, $brand-primary, 2em, 1em);
+    @include intrinsic-pad-ratio(3, 2, '.stretch', 768, 3, 2, $body-bg, $brand-primary, 2em, 1em);
+    &.has-caption {
+      margin-bottom: $grid-gutter-width + 10px;
+    }
     .caption {
       position: absolute;
-      bottom: -$grid-gutter-width;
+      bottom: -($grid-gutter-width + 10px);
       left: 0;
+      right: 0;
+      margin: 0;
+      text-align: center;
     }
   }
   // Navigation

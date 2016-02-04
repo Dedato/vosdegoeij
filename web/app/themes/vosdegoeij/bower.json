@@ -9,7 +9,7 @@
   "dependencies": {
     "bootstrap-sass": "3.3.6",
     "respimage": "~1.4.2",
-    "lazysizes": "~1.3.2",
+    "lazysizes": "~1.4.*",
     "owl.carousel": "~2.0.0-beta.3",
     "font-awesome": "fontawesome#~4.5.0"
   },
