@@ -59,7 +59,8 @@
     "advanced-custom-fields/advanced-custom-fields-pro": "5.3.*",
     "wpackagist-plugin/restricted-site-access": "5.*",
     "wpackagist-plugin/better-wp-security": "^5.1",
-    "wpackagist-plugin/enhanced-media-library": "^2.1"
+    "wpackagist-plugin/enhanced-media-library": "^2.1",
+    "wpackagist-plugin/wp-migrate-db": "^0.8.0"
   },
   "extra": {
     "installer-paths": {
