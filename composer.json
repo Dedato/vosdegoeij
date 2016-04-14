@@ -29,21 +29,21 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
+      "url": "https://wpackagist.org"
     },
     {
       "type": "composer",
-      "url": "http://languages.koodimonni.fi"
+      "url": "https://languages.koodimonni.fi"
     },
     {
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.3.3.2",
+        "version": "5.3.7",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzQ1ODJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTEyIDE3OjE5OjU3"
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NzkyOTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTA0LTExIDA5OjA0OjQ2"
         }
       }
     }

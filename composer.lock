@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c5a5375f627e84a60ed50e8b7a7a97c2",
-    "content-hash": "22272a8e7ad98ab8d3a356098f3d58dd",
+    "hash": "207e8125f7ca7209686d9f016c0bda2a",
+    "content-hash": "5eae282407d7018b6b7f4b95b60c0cee",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.3.3.2",
+            "version": "5.3.7",
             "dist": {
                 "type": "zip",
-                "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzQ1ODJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTEyIDE3OjE5OjU3",
+                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NzkyOTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTA0LTExIDA5OjA0OjQ2",
                 "reference": null,
                 "shasum": null
             },
@@ -71,16 +71,16 @@
         },
         {
             "name": "asm89/twig-cache-extension",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/asm89/twig-cache-extension.git",
-                "reference": "127410728db193a88254c399e3455274fc05fa5d"
+                "reference": "76a801d6da8e1a1015af974d93df4ade0dda7267"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/asm89/twig-cache-extension/zipball/127410728db193a88254c399e3455274fc05fa5d",
-                "reference": "127410728db193a88254c399e3455274fc05fa5d",
+                "url": "https://api.github.com/repos/asm89/twig-cache-extension/zipball/76a801d6da8e1a1015af974d93df4ade0dda7267",
+                "reference": "76a801d6da8e1a1015af974d93df4ade0dda7267",
                 "shasum": ""
             },
             "require": {
@@ -93,7 +93,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -118,20 +118,20 @@
                 "extension",
                 "twig"
             ],
-            "time": "2015-10-17 11:55:02"
+            "time": "2016-02-14 13:52:38"
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.23",
+            "version": "v1.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "url": "https://api.github.com/repos/composer/installers/zipball/36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
                 "shasum": ""
             },
             "require": {
@@ -153,8 +153,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Composer\\Installers\\": "src/"
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -169,12 +169,14 @@
                 }
             ],
             "description": "A multi-framework Composer library installer",
-            "homepage": "http://composer.github.com/installers/",
+            "homepage": "https://composer.github.io/installers/",
             "keywords": [
                 "Craft",
                 "Dolibarr",
                 "Hurad",
+                "ImageCMS",
                 "MODX Evo",
+                "Mautic",
                 "OXID",
                 "SMF",
                 "Thelia",
@@ -216,20 +218,20 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-01-27 12:54:22"
+            "time": "2016-04-13 19:46:30"
         },
         {
             "name": "jarednova/timber",
-            "version": "0.22.5",
+            "version": "0.22.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jarednova/timber.git",
-                "reference": "96e6a228b1b8b03ab55270ba3a2966c26522a01e"
+                "url": "https://github.com/timber/timber.git",
+                "reference": "06e7faded55fcbcedb34d753bc93987cab4ee978"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jarednova/timber/zipball/96e6a228b1b8b03ab55270ba3a2966c26522a01e",
-                "reference": "96e6a228b1b8b03ab55270ba3a2966c26522a01e",
+                "url": "https://api.github.com/repos/timber/timber/zipball/06e7faded55fcbcedb34d753bc93987cab4ee978",
+                "reference": "06e7faded55fcbcedb34d753bc93987cab4ee978",
                 "shasum": ""
             },
             "require": {
@@ -272,7 +274,7 @@
                 "timber",
                 "twig"
             ],
-            "time": "2016-01-18 18:00:17"
+            "time": "2016-03-13 15:44:19"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -382,20 +384,23 @@
         },
         {
             "name": "koodimonni/composer-dropin-installer",
-            "version": "0.2.4",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Koodimonni/Composer-Dropin-Installer.git",
-                "reference": "618b96fd3bc8c1532610b7f7baedc4e60736a340"
+                "reference": "717d992bccb9e5b1fded44136333704d4e61a4ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Koodimonni/Composer-Dropin-Installer/zipball/618b96fd3bc8c1532610b7f7baedc4e60736a340",
-                "reference": "618b96fd3bc8c1532610b7f7baedc4e60736a340",
+                "url": "https://api.github.com/repos/Koodimonni/Composer-Dropin-Installer/zipball/717d992bccb9e5b1fded44136333704d4e61a4ae",
+                "reference": "717d992bccb9e5b1fded44136333704d4e61a4ae",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*-dev"
             },
             "type": "composer-plugin",
             "extra": {
@@ -417,20 +422,20 @@
                 }
             ],
             "description": "Do what the fuck you want with your composer packages aka. Composer Dropin installer. Install packages or part of packages into custom paths without overwriting existing stuff.",
-            "time": "2015-01-04 10:24:12"
+            "time": "2015-06-11 14:15:20"
         },
         {
             "name": "roots/soil",
-            "version": "3.6.2",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "8b534d4b271033d22b8fa0d055c740f7f9c4ca58"
+                "reference": "085fd3c9b16df5b72dce4fba09de0207937ef721"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/8b534d4b271033d22b8fa0d055c740f7f9c4ca58",
-                "reference": "8b534d4b271033d22b8fa0d055c740f7f9c4ca58",
+                "url": "https://api.github.com/repos/roots/soil/zipball/085fd3c9b16df5b72dce4fba09de0207937ef721",
+                "reference": "085fd3c9b16df5b72dce4fba09de0207937ef721",
                 "shasum": ""
             },
             "require": {
@@ -459,7 +464,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-12-24 19:42:34"
+            "time": "2016-03-07 19:49:21"
         },
         {
             "name": "twig/twig",
@@ -626,15 +631,15 @@
         },
         {
             "name": "wpackagist-plugin/better-wp-security",
-            "version": "5.2.0",
+            "version": "5.3.5",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/better-wp-security/",
-                "reference": "tags/5.2.0"
+                "url": "https://plugins.svn.wordpress.org/better-wp-security/",
+                "reference": "tags/5.3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/better-wp-security.5.2.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/better-wp-security.5.3.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -646,15 +651,15 @@
         },
         {
             "name": "wpackagist-plugin/enhanced-media-library",
-            "version": "2.1.7",
+            "version": "2.2.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/enhanced-media-library/",
-                "reference": "tags/2.1.7"
+                "url": "https://plugins.svn.wordpress.org/enhanced-media-library/",
+                "reference": "tags/2.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/enhanced-media-library.2.1.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/enhanced-media-library.2.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -669,7 +674,7 @@
             "version": "5.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/restricted-site-access/",
+                "url": "https://plugins.svn.wordpress.org/restricted-site-access/",
                 "reference": "tags/5.1"
             },
             "dist": {
