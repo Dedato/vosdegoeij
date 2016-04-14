@@ -20,6 +20,11 @@ var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 
+// Upload via FTP
+var gutil        = require('gulp-util');
+var vinylftp     = require('vinyl-ftp');
+var ftppass      = require('./.ftppass.json');
+
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
 
@@ -233,6 +238,43 @@ gulp.task('jshint', function() {
     .pipe(gulpif(enabled.failJSHint, jshint.reporter('fail')));
 });
 
+// ### Upload
+gulp.task('upload', function(callback) {
+  runSequence('rmdirdist', 'ftpupload', callback);
+});
+
+// ### Remove remote dist directory
+gulp.task( 'rmdirdist', function (cb) {
+  var conn = vinylftp.create( ftppass );
+  conn.rmdir( '/public_html/app/themes/vosdegoeij/dist', cb );
+});
+
+// ### Upload Vinyl FTP
+gulp.task('ftpupload', function (callback) {
+  var conn = vinylftp.create({
+    host:       ftppass.host,
+    user:       ftppass.user,
+    password:   ftppass.password,
+    log:        gutil.log
+  });
+  var globs = [
+    '*.php',
+    '*.png',
+    'dist/**',
+    'dist/scripts/*(.js|+(-*.js))',
+    'dist/styles/*(.css|+(-*.css))',
+    'lang/**',
+    'lib/**',
+    'templates/*.php',
+    'views/*.twig'
+  ];
+  // using base = '.' will transfer everything to /public_html correctly
+  // turn off buffering in gulp.src for best performance
+  return gulp.src( globs, { base: '.', buffer: false } )
+    .pipe( conn.newer( '/public_html/app/themes/vosdegoeij' ) ) // only upload newer files
+    .pipe( conn.dest( '/public_html/app/themes/vosdegoeij' ) );
+});
+
 // ### Clean
 // `gulp clean` - Deletes the build folder entirely.
 gulp.task('clean', require('del').bind(null, [path.dist]));
@@ -262,12 +304,22 @@ gulp.task('watch', function() {
 // ### Build
 // `gulp build` - Run all the build tasks but don't clean up beforehand.
 // Generally you should be running `gulp` instead of `gulp build`.
-gulp.task('build', function(callback) {
-  runSequence('styles',
-              'scripts',
-              ['fonts', 'images'],
-              callback);
+gulp.task('build', function(callback) {  
+  var tasks = [
+    'styles',
+    'scripts', 
+    ['fonts', 'images']
+  ];
+  // only add upload to task list if `--production`
+  if (argv.production) {
+    tasks = tasks.concat(['upload']);
+  }
+  runSequence.apply(
+    this,
+    tasks.concat([callback])
+  );
 });
+
 
 // ### Wiredep
 // `gulp wiredep` - Automatically inject Less and Sass Bower dependencies. See
