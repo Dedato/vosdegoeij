@@ -33,5 +33,5 @@ bin
 # Mac
 .DS_Store
 
-# Textfiles
-*.md
+# Private
+DEDATO_INSTRUCTIONS.md
